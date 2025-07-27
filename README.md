@@ -1,64 +1,51 @@
-<<<<<<< HEAD
-# MarketingPortfolio
+# Marketing Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
+This is a personal marketing portfolio web application built with Angular. It showcases marketing projects, skills, brand collaborations, and results in a visually engaging and interactive format.
 
-## Development server
+## Features
+- Responsive, modern design
+- Animated sections and smooth transitions
+- Modular Angular components for each portfolio section
+- Easy to extend with new projects or brands
 
-To start a local development server, run:
+## Getting Started
 
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v16 or higher recommended)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd marketing-portfolio
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running the Project
+Start the development server:
 ```bash
-ng serve
+npm start
 ```
+The app will be available at [http://localhost:4200](http://localhost:4200).
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+### Building for Production
+To build the project for production:
 ```bash
-ng generate component component-name
+npm run build
 ```
+The output will be in the `dist/` directory.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Project Structure
+- `src/app/` — Angular components for each section (About Me, My Work, Brands, etc.)
+- `src/assets/` — Images and static assets
+- `src/styles.sass` — Global styles and animations
 
-```bash
-ng generate --help
-```
+## Customization
+You can add or modify portfolio sections by editing or creating new Angular components in `src/app/`.
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-=======
-# marketing-portfolio
-Static marketing portfolio using Angular
->>>>>>> e6831ead4278fb8402d424798a182dbd3dbb011e
+## License
+This project is for personal and educational use. For commercial use, please contact the author.
