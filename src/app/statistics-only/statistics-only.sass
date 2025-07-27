@@ -1,0 +1,43 @@
+.statistics-page
+    height: 100%
+    position: relative
+    padding-top: 1rem
+
+h4
+    margin-bottom: 1rem
+
+.statistics-wrapper
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    gap: 2rem
+    .img-wrapper
+        flex: 0 0 80%
+
+@media (min-width: 500px)
+    h4
+        margin-bottom: 3rem
+    .statistics-wrapper
+        gap: 2rem
+        .img-wrapper
+            flex: 0 0 45%
+        .last
+            flex: 0 0 80%
+
+@media (min-width: 850px)
+    .statistics-wrapper
+        .img-wrapper
+            flex: 0 0 35%
+        .last
+            flex: 0 0 80%
+
+@media (min-width: 1024px)
+    h4
+        margin-bottom: 3rem
+    .statistics-wrapper
+        gap: 2rem
+        .img-wrapper
+            flex: 0 0 35%
+        .last
+            flex: 0 0 60%

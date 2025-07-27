@@ -1,0 +1,80 @@
+@use '../../styles/_variables' as *
+
+.brands-page
+    height: 100%
+    position: relative
+    padding-top: 2rem
+
+.page-intro
+    display: flex
+    .page-num
+        flex: 0 0 15%
+        text-align: center
+        font-size: 3rem
+    .text
+        font-size: 0.7rem
+        border-top: 0.3rem solid $heading-color
+        text-align: center
+        padding-top: 1rem
+
+.brands-list
+    margin-top: 1.5rem
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    gap: 1rem
+    li
+        flex: 0 0 80px
+        img:hover
+            transform: scale(1.2)
+            cursor: pointer
+
+@media (min-width: 425px)
+    .brands-list
+        li
+            flex: 0 0 100px
+
+@media (min-width: 768px)
+    .brands-page
+        padding-top: 0
+    .page-intro
+        .page-num
+            flex: 0 0 20%
+            font-size: 6rem
+        .text
+            font-size: 0.9rem
+            margin-top: 2rem
+
+    .brands-list
+        li
+            flex: 0 0 120px
+
+@media (min-width: 1024px)
+    .page-intro
+        .text
+            border-top: 0.5rem solid $heading-color
+    .brands-list
+        margin-top: 2rem
+        li
+            flex: 0 0 145px
+
+@media (min-width: 1250px)
+    .brands-page
+        padding: 1rem
+
+    .page-intro
+        .page-num
+            font-size: 7rem
+        .text
+            margin-top: 3rem
+
+    .brands-list
+        li
+            flex: 0 0 180px
+            
+@media (min-width: 1440px)
+    .page-intro
+        .text
+            font-size: 1.3rem

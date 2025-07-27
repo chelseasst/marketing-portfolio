@@ -1,0 +1,72 @@
+@use '../../styles/_variables' as *
+
+.intro
+    height: 100%
+    position: relative
+    display: flex
+    flex-direction: colum
+    justify-content: flex-start
+    align-items: center
+
+.role-div
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: absolute
+    top: 1em
+    right: 1rem
+    .small
+        font-size: 0.8rem
+
+.headings
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    margin-top: 5rem
+    gap: 7rem
+h1
+    border-bottom: 3px solid
+
+.stars
+    position: absolute
+    width: 100px
+    top: -100px
+
+.splash
+    position: absolute
+    width: 100px
+    bottom: 100px
+    right: -60px
+
+.contacts
+    a
+        display: block
+    p
+        font-size: 1.5em
+        background-color: $accent-color
+        border-radius: 10px
+        padding-left: 0.5em
+
+@media (min-width: 768px)
+    .role-div
+        font-size: 1.5rem
+    .stars
+        width: 130px
+        top: -130px
+    .splash
+        width: 130px
+        right: -130px
+
+@media (min-width: 1440px)
+    .role-div
+        font-size: 3rem
+        .small
+            font-size: 1.5rem
+    .stars
+        width: 130px
+        top: -130px
+    .splash
+        width: 130px
+        right: -130px

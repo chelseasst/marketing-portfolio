@@ -1,0 +1,119 @@
+@use '../../styles/_variables' as *
+
+.about-me-page
+    height: 100%
+    position: relative
+    padding: 1rem 0rem
+
+h3
+    text-align: center
+    padding-left: 6rem
+
+.about-me-div
+    display: flex
+    flex-direction: column
+    .image-wrapper
+        display: flex
+        justify-content: center
+        align-items: center
+        flex: 1 0 25%
+        .profile-img-div
+            width: 150px
+            height: 150px
+            border-radius: 50%
+            overflow: hidden
+            &:hover
+                transform: scale(1.1)
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 30px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px
+                cursor: pointer
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        display: block
+
+.text-div
+    margin-bottom: 1rem
+    border-bottom: 2px solid $heading-color
+    text-align: center
+    .birth-date
+        text-align: end
+        span
+            background-color: $accent-color
+            padding: 0.3rem
+            border-radius: 0.5rem
+
+.education-wrapper
+    text-align: center
+    display: flex
+    align-items: baseline
+    justify-content: center
+    flex-wrap: wrap
+    p
+        font-size: 0.8em
+        &::before
+            content: "# "
+
+.education
+    flex: 1 0 50%
+    img
+        width: 60px
+        &:hover
+            transform: scale(1.2)
+    .socials-label
+        display: none
+
+    .socials-wrapper
+        display: flex
+        justify-content: center
+        align-items: center
+        img:hover
+            transform: scale(1.2)
+
+@media (min-width: 425px)
+    .about-me-div
+        margin-bottom: 3rem
+    .text-div
+        padding-bottom: 3rem
+
+@media (min-width: 768px)
+    .about-me-div
+        flex-direction: row
+        gap: 1rem
+        .image-wrapper
+            .profile-img-div
+                width: 200px
+                height: 200px
+    .text-div
+        padding-bottom: 2rem
+        margin-bottom: 3rem
+        .birth-date
+            text-align: end
+            margin-bottom: 1rem
+
+    .icon-1, .icon-2
+        width: 100px
+        height: 100px
+        background-size: cover
+        background-repeat: no-repeat
+        display: inline-block
+        margin-top: 0.5rem
+    .icon-1
+        background-image: url('../../assets/softuni.png')
+    .icon-2
+        background-image: url('../../assets/bels.png')
+
+    .education
+        flex: 0 0 33%
+        img
+            width: 80px
+        .socials-label
+            display: inline-block
+
+        .socials-wrapper
+            flex-direction: column
+            justify-content: center
+
+@media (min-width: 1024px)
+    .about-me-div
+        margin-bottom: 3rem

@@ -1,0 +1,58 @@
+@use '../../styles/_variables' as *
+
+h4
+    margin: 0
+    margin-bottom: 0.5rem
+.skills
+    height: 100%
+    padding-top: 1rem
+
+.list-div
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 2rem
+    padding-bottom: 1rem
+    li
+        padding-bottom: 0.5rem
+    p
+        font-weight: 600
+    span
+        display: none
+        font-size: 0.9rem
+        &::before
+            content: '['
+        &::after
+            content: ']'
+    .light
+        width: 150px
+        height: 12px
+        border-radius: 10px
+        border: 1px solid $heading-color
+        background-color: $accent-color
+    .dark
+        height: 11px
+        border-radius: 10px
+        background-color: $heading-color
+    .dark-seventy
+        width: 100px
+    .dark-eighty
+        width: 120px
+    .dark-ninety
+        width: 130px
+
+.quote
+    text-align: center
+    font-style: italic
+    color: $heading-color
+
+@media (min-width: 768px)
+    .list-div
+        flex-direction: row
+        justify-content: space-around
+        gap: 1rem
+        span
+            display: inline-block
+    h4
+        margin-top: 1rem

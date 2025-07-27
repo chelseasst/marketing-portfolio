@@ -1,1 +1,163 @@
 /* You can add global styles to this file, and also import other style files */
+@use '../src/styles/_variables' as *
+
+*,
+*::before,
+*::after
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    color: $heading-color
+    font-family: $font-family-base
+    font-size: 16px
+
+html, body
+    scroll-behavior: smooth
+    height: 100%
+    overflow-x: hidden
+p,
+li,
+span,
+label,
+input,
+textarea,
+select,
+a
+    font-size: inherit
+
+body
+    // font-size: $font-size-base
+    line-height: 1.6
+    background-color: $background-color
+    background-image: url('assets/background.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    overflow: hidden
+    height: 100%
+
+img, picture, video, canvas, svg
+    display: block
+    max-width: 100%
+
+input, button, textarea, select
+    font: inherit
+    outline: none
+    border: none
+    background: none
+
+ul, ol
+    list-style: none
+
+a
+    text-decoration: none
+    color: inherit
+    cursor: pointer
+    &:hover
+        text-decoration: underline
+
+button
+    cursor: pointer
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+    font-family: "Mystery Quest", system-ui
+    text-transform: uppercase
+    letter-spacing: 0.2rem
+
+h1
+    font-size: 3em
+h2
+    font-size: 1.5em //24px
+
+h3
+    font-size: 1.17em
+
+h4
+    font-size: 1em //16px
+
+h5
+    font-size: 0.83em
+
+h6
+    font-size: 0.67em
+
+.heading
+    font-family: "Mystery Quest", system-ui
+    text-transform: uppercase
+    *
+        font-family: inherit
+        text-transform: inherit
+
+h4
+    display: flex
+    justify-content: center
+
+.heading-label
+    text-align: center
+    background-color: $accent-color
+    padding: 0.2rem 0.8rem
+    border-radius: 0.8rem
+
+.darker
+    img:hover
+        cursor: pointer
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px
+
+@keyframes slideIn
+    to
+        opacity: 1
+        transform: translateX(0)
+
+.slide-left.animate
+    opacity: 0
+    transform: translateX(-100px)
+    animation: slideIn 2s ease-out forwards
+
+.slide-right.animate
+    opacity: 0
+    transform: translateX(100px)
+    animation: slideIn 2s ease-out forwards
+
+@media (min-width: 768px)
+    *,
+    *::before,
+    *::after
+        font-size: 18px
+    h1
+        font-size: 4em
+    h2
+        font-size: 2em
+    h3
+        font-size: 1.5em
+    h4
+        font-size: 1.2em
+    h5
+        font-size: 1em
+    h6
+        font-size: 0.83em
+
+@media (min-width: 1440px)
+    html, body
+        font-size: 100%
+
+    *,
+    *::before,
+    *::after
+        font-size: 26px
+    h1
+        font-size: 5em
+    h2
+        font-size: 3em
+    // h3
+    //     font-size: 1.5em
+    // h4
+    //     font-size: 1.2em
+    // h5
+    //     font-size: 1em
+    // h6
+    //     font-size: 0.83em
