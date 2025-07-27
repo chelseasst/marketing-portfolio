@@ -12,6 +12,7 @@ h3
 .about-me-div
     display: flex
     flex-direction: column
+    margin-bottom: 1rem
     .image-wrapper
         display: flex
         justify-content: center
@@ -33,7 +34,6 @@ h3
         display: block
 
 .text-div
-    margin-bottom: 1rem
     border-bottom: 2px solid $heading-color
     text-align: center
     .birth-date
@@ -70,11 +70,13 @@ h3
         img:hover
             transform: scale(1.2)
 
-@media (min-width: 425px)
+@media (min-width: 375px)
     .about-me-div
-        margin-bottom: 3rem
+        margin-bottom: 2rem
+        .image-wrapper
+            margin: 1rem 0
     .text-div
-        padding-bottom: 3rem
+        padding-bottom: 1rem
 
 @media (min-width: 768px)
     .about-me-div
@@ -113,7 +115,3 @@ h3
         .socials-wrapper
             flex-direction: column
             justify-content: center
-
-@media (min-width: 1024px)
-    .about-me-div
-        margin-bottom: 3rem
