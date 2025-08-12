@@ -1,25 +1,11 @@
 import { Component } from '@angular/core';
+import { AnimateOnScroll } from '../shared/animate-on-scroll';
 
 @Component({
   selector: 'app-intro',
-  imports: [],
+  imports: [AnimateOnScroll],
   templateUrl: './intro.html',
   styleUrl: './intro.sass'
 })
 export class Intro {
-  ngAfterViewInit() {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
-    document.querySelectorAll('.slide-left, .slide-right').forEach(el => {
-      observer.observe(el);
-    });
-  }
 }

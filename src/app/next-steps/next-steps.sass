@@ -1,0 +1,141 @@
+@use '../../styles/_variables' as * 
+
+.page-intro
+    display: flex
+    align-items: flex-start
+    .page-num
+        flex: 0 0 15%
+        text-align: center
+        font-size: 3rem
+    h3
+        flex: 0 1 100%
+        font-family: serif
+        font-size: 1.2rem
+        font-weight: 200
+        color: black
+        text-transform: uppercase
+        border-bottom: 0.3rem solid $heading-color
+        text-align: center
+
+// MOBILE
+.steps-mobile
+    .steps-wrapper
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        gap: 0.5rem
+        text-align: center
+        &::before
+            content: ''
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            top: 0
+            bottom: 0
+            width: 3px
+            background-color: black
+            z-index: -1
+        .num
+            height: 35px
+            width: 35px
+            border-radius: 50%
+            background-color: $accent-color
+            font-size: 1.3rem
+            &:hover
+                scale: 1.2
+        .step-content
+            font-size: 0.7rem
+            background-color: white
+            border: 2px solid rgb(217, 213, 213)
+            border-radius: 10px
+            padding: 0.2rem
+        .step-title
+            font-family: $font-family-headings
+            background-color: $accent-color
+            border-radius: 10px
+
+// DESKTOP
+
+.steps-desktop
+    .titles-ul
+        display: flex
+        justify-content: space-around
+        text-align: center
+        margin-bottom: 1rem
+        li
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 150px
+            background-color: $accent-color
+            border-radius: 15px
+    .nums-ul
+        position: relative
+        display: flex
+        justify-content: space-around
+        margin-bottom: 1rem
+        &::before
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            left: 0
+            right: 0
+            height: 3px
+            background-color: black
+            z-index: -1
+        li
+            height: 50px
+            width: 50px
+            border-radius: 50%
+            background-color: $heading-color
+            color: $accent-color
+            text-align: center
+            font-size: 1.5rem
+    .explanations-ul
+        display: flex
+        justify-content: space-around
+        text-align: center
+        li
+            width: 200px
+
+@media (min-width: 425px)
+    .page-intro
+        align-items: center
+
+@media (min-width: 550px)
+    .steps-mobile
+        .steps-wrapper
+            gap: 1rem
+
+@media (min-width: 768px)
+    .page-intro
+        margin-bottom: 2rem
+        .page-num
+            font-size: 6rem
+        h3
+            font-size: 1.8rem
+
+@media (min-width: 1440px)
+    .page-intro
+        .page-num
+            font-size: 7rem
+        h3
+            font-size: 3rem
+    .steps-desktop
+        .titles-ul
+            margin-bottom: 1rem
+            li
+                width: 200px
+                padding: 0.5rem
+        .nums-ul
+            margin-bottom: 1rem
+            li
+                height: 70px
+                width: 70px
+                font-size: 2.3rem
+        .explanations-ul
+            li
+                width: 330px

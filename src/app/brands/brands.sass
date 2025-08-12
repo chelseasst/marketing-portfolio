@@ -21,24 +21,36 @@
         text-align: center
         padding-top: 1rem
 
-.brands-list
-    margin-top: 1.5rem
-    display: flex
-    flex-direction: row
-    flex-wrap: wrap
-    justify-content: space-between
-    align-items: center
-    gap: 1rem
-    li
-        flex: 0 0 80px
-        img:hover
-            transform: scale(1.2)
-            cursor: pointer
+.brands-scroll-wrapper
+    margin-top: 1rem
+    width: 100%
+    overflow: hidden
+    .scroll-content
+        display: flex
+        align-items: center
+        gap: 1rem
+        animation: marquee 10s linear infinite
+        width: max-content
+        will-change: transform
+        pointer-events: none
+        overflow: hidden
+        li
+            flex-shrink: 0
+            width: 150px
+
+.scroll-content:hover li
+    animation-play-state: paused
+
+@keyframes marquee
+    from
+        transform: translateX(0)
+    to
+        transform: translateX(-50%)
 
 @media (min-width: 375px)
     .brands-list
         li
-            flex: 0 0 90px
+            flex: 0 0 200px
 
 @media (min-width: 768px)
     .brands-page
@@ -74,11 +86,17 @@
         .text
             margin-top: 3rem
 
-    .brands-list
-        li
-            flex: 0 0 180px
-            
+    .brands-scroll-wrapper
+        .scroll-content
+            li
+                width: 200px
+
 @media (min-width: 1440px)
     .page-intro
         .text
-            font-size: 1.3rem
+            font-size: 1.5rem
+
+    .brands-scroll-wrapper
+        .scroll-content
+            li
+                width: 250px

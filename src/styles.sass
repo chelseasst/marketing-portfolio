@@ -123,6 +123,22 @@ h4
     transform: translateX(200px)
     animation: slideIn 1s ease-out forwards
 
+@keyframes pop
+    to
+        opacity: 1
+        transform: scale(1)
+
+// .pop.animate
+//     .num
+//         opacity: 0
+//         transform: scale(0)
+//         animation: pop 1s ease-out forwards
+
+.pop.animate
+    opacity: 0
+    transform: scale(0)
+    animation: pop 1s ease-out forwards
+
 @media (min-width: 768px)
     *,
     *::before,

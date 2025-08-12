@@ -1,0 +1,79 @@
+@use '../../styles/_variables' as *
+
+.perfume-results-page
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+h4
+    margin-bottom: 1rem
+
+.wrapper
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    padding-top: 0.5rem
+    padding-bottom: 1rem
+    ul
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        font-size: 0.8rem
+    .my-job
+        list-style-type: disc
+
+.accent
+    color: $accent-color
+
+@media (min-width: 375px)
+    .wrapper
+        padding-top: 1rem
+        padding-bottom: 2rem
+        ul
+            font-size: 0.9rem
+    .ipad-wrapper
+        width: 80%
+
+@media (min-width: 500px)
+    .wrapper
+        flex-direction: row
+        justify-content: space-around
+        gap: 1rem
+        padding-bottom: 1.5rem
+        ul
+            flex: 0 0 40%
+
+@media (min-width: 700px)
+    .ipad-wrapper
+        width: 70%
+
+@media (min-width: 768px)
+    .perfume-results-page
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+    .wrapper
+        flex: 0 0 40%
+        flex-direction: column
+        justify-content: center
+        padding-top: 0
+        padding-bottom: 0
+        ul
+            font-size: 1rem
+    .ipad-wrapper
+        flex: 0 0 60%
+
+@media (min-width: 1024px)
+    .wrapper
+        flex: 0 0 40%
+    .ipad-wrapper
+        flex: 0 0 60%
+
+@media (min-width: 1440px)
+    .wrapper
+        ul
+            font-size: 1.5rem

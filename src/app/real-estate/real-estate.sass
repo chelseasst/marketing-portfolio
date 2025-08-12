@@ -1,0 +1,53 @@
+@use '../../styles/_variables' as *
+
+.real-estate-page
+    padding-top: 0.5rem
+
+.logo-container
+    width: 150px
+    margin: 0 auto
+    margin-bottom: 1rem
+
+.budgets-container
+    p
+        color: $accent-color
+        span
+            color: $heading-color
+
+.content-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 1rem
+    .phone-container
+        display: flex
+        justify-content: center
+        .first, .second, .third
+            width: 30%
+
+@media (min-width: 768px)
+    .content-wrapper
+        .phone-container
+            .first, .second, .third
+                width: 25%
+
+@media (min-width: 1024px)
+    .logo-container
+        width: 200px
+    .real-estate-page
+        padding: 1rem
+    .content-wrapper
+        flex-direction: row
+        align-items: flex-start
+        gap: 0
+        margin-top: 3rem
+        .phone-container
+            gap: 0.5rem
+            .first, .second, .third
+                width: 30%
+            .second
+                padding-top: 6rem
+
+@media (min-width: 1440px)
+    .logo-container
+        width: 300px

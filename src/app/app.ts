@@ -11,10 +11,19 @@ import { StatisticsOnly } from './statistics-only/statistics-only';
 import { Contribution } from './contribution/contribution';
 import { Statistics2 } from './statistics-2/statistics-2';
 import { Perfume } from './perfume/perfume';
+import { PerfumeResults } from './perfume-results/perfume-results';
+import { HighSociety } from './high-society/high-society';
+import { RealEstate } from './real-estate/real-estate';
+import { Important } from './important/important';
+import { TopResults } from './top-results/top-results';
+import { ServicesResults } from './services-results/services-results';
+import { NextSteps } from './next-steps/next-steps';
 
 @Component({
   selector: 'app-root',
-  imports: [ CommonModule, Intro, TableOfContents, AboutMe, MySkills, MyWork, Brands, BrandInfo, StatisticsOnly, Contribution, Statistics2, Perfume],
+  imports: [CommonModule, Intro, TableOfContents, AboutMe, MySkills,
+    MyWork, Brands, BrandInfo, StatisticsOnly, Contribution, Statistics2, Perfume, PerfumeResults,
+    HighSociety, RealEstate, Important, TopResults, ServicesResults, NextSteps],
   templateUrl: './app.html',
   styleUrl: './app.sass'
 })

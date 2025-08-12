@@ -1,25 +1,11 @@
 import { Component } from '@angular/core';
+import { AnimateOnScroll } from '../shared/animate-on-scroll';
 
 @Component({
   selector: 'app-brand-info',
-  imports: [],
+  imports: [AnimateOnScroll],
   templateUrl: './brand-info.html',
   styleUrl: './brand-info.sass'
 })
 export class BrandInfo {
-  ngAfterViewInit() {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
-    document.querySelectorAll('.slide-left').forEach(el => {
-      observer.observe(el);
-    });
-  }
 }

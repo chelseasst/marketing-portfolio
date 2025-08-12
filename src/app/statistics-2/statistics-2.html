@@ -1,20 +1,14 @@
 <div class="statistics-2-page">
     <h4><span class="heading heading-label">Examples</span></h4>
     <div class="wrapper slider">
-        <div class="statistics-wrapper-1">
+        <div class="iphone-wrapper">
             <div class="img-wrapper">
-                <img src="assets/statistics/palessio-insta-fb.png" alt="Statistics">
+                <img src="/assets/statistics/palessio-insta-fb.png" alt="Statistics">
             </div>
         </div>
-        <div class="ipad-frame">
-            <span class="swipe-left">Swipe left 👇🏻🚀</span>
-            <span class="ipad-camera"></span>
-            <div class="statistics-wrapper-2">
-                <img src="assets/statistics/results-1.png" alt="Statistics">
-                <img class="align-right" src="assets/statistics/results-2.png" alt="Statistics">
-                <img src="assets/statistics/results-3.png" alt="Statistics">
-                <span class="home-button"></span>
-            </div>
+        <div class="ipad-wrapper">
+            <app-ipad
+                [images]="['/assets/statistics/results-1.png', '/assets/statistics/results-2.png', '/assets/statistics/results-3.png']"></app-ipad>
         </div>
     </div>
 </div>

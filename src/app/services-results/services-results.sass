@@ -1,0 +1,29 @@
+@use '../../styles/_variables' as *
+
+.services-results-page
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+
+.services
+    li
+        text-align: center
+        color: $accent-color
+        &::before
+            content: '✓'
+            padding-right: 1rem
+h3
+    text-align: center
+@media (min-width: 700px)
+    .ipad-wrapper
+        width: 80%
+
+@media (min-width: 768px)
+    .services-results-page
+        flex-direction: row
+
+@media (min-width: 1024px)
+    .ipad-wrapper
+        width: 60%

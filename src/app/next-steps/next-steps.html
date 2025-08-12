@@ -1,0 +1,79 @@
+@if(isDesktop){
+<div class="steps-desktop">
+    <div class="page-intro">
+        <p class="page-num heading">05</p>
+        <h3>What are your steps?</h3>
+    </div>
+    <div class="steps-wrapper">
+        <ul class="titles-ul heading">
+            <li>First Meting</li>
+            <li>Blueprint + offer</li>
+            <li>Final meeting + discuss the offer</li>
+            <li>Start date + Working together</li>
+        </ul>
+        <ul #steps class="nums-ul pop" appAnimateOnScroll>
+            <li class="num">1</li>
+            <li class="num">2</li>
+            <li class="num">3</li>
+            <li class="num">4</li>
+        </ul>
+        <ul class="explanations-ul">
+            <li>We start with a quick meeting to understand your business, goals, and current challenges. I’ll ask
+                key questions and explain how my services can bring measurable results tailored to your brand.</li>
+            <li>After our call, I’ll prepare a clear plan outlining the strategy, ad channels, and timelines — along
+                with a custom offer that fits your goals and budget.</li>
+            <li>We meet again to walk through the blueprint, answer any questions, and make final adjustments. Once
+                you're confident, we align on the direction and next steps.
+            </li>
+            <li>Once approved, we lock in the start date and begin the onboarding process. From here, I handle
+                setup, strategy, and execution — so we can start delivering results fast.
+            </li>
+        </ul>
+    </div>
+</div>
+}@else {
+<div class="steps-mobile">
+    <div class="page-intro">
+        <h3>What are your steps?</h3>
+        <p class="page-num heading">05</p>
+    </div>
+    <ul class="steps-wrapper pop" appAnimateOnScroll>
+        <li class="num">
+            1
+        </li>
+        <li class="step-content">
+            <p class="step-title">First Meting</p>
+            <p class="step-explanation">We start with a quick meeting to understand your business, goals, and
+                current challenges. I’ll ask
+                key questions and explain how my services can bring measurable results tailored to your brand.</p>
+        </li>
+        <li class="num">
+            2
+        </li>
+        <li class="step-content">
+            <p class="step-title">Blueprint + offer</p>
+            <p class="step-explanation">After our call, I’ll prepare a clear plan outlining the strategy, ad
+                channels, and timelines — along
+                with a custom offer that fits your goals and budget.</p>
+        </li>
+        <li class="num">
+            3
+        </li>
+        <li class="step-content">
+            <p class="step-title">Final meeting + discuss the offer</p>
+            <p class="step-explanation">We meet again to walk through the blueprint, answer any questions, and make
+                final adjustments. Once
+                you're confident, we align on the direction and next steps.</p>
+        </li>
+        <li class="num">
+            4
+        </li>
+        <li class="step-content">
+            <p class="step-title">Start date + Working together</p>
+            <p class="step-explanation">Once approved, we lock in the start date and begin the onboarding process.
+                From here, I handle
+                setup, strategy, and execution — so we can start growing.</p>
+        </li>
+    </ul>
+</div>
+}

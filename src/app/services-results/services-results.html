@@ -1,0 +1,20 @@
+<div class="services-results-page">
+    @if (data.side === 'right') {
+    <div class="ipad-wrapper">
+        <app-ipad [images]="data.images"></app-ipad>
+    </div>
+    }
+    <div class="results-wrapper">
+        <h3>{{data.heading}}</h3>
+        <ul class="services heading">
+            @for (service of data.services; track service) {
+            <li class="slide-left">{{ service }}</li>
+            }
+        </ul>
+    </div>
+    @if (data.side === 'left') {
+    <div class="ipad-wrapper">
+        <app-ipad [images]="data.images"></app-ipad>
+    </div>
+    }
+</div>
