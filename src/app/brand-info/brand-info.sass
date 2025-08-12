@@ -2,10 +2,9 @@
 
 .brand-info-page
     height: 100%
-    position: relative
     display: flex
     flex-direction: column
-    justify-content: center
+    padding-top: 1rem
 
 .page-intro
     display: flex
@@ -13,7 +12,6 @@
     .page-num
         flex: 0 0 15%
         text-align: center
-        font-size: 3rem
     h3
         flex: 0 1 100%
         font-family: serif
@@ -30,9 +28,10 @@
     justify-content: center
     align-items: center
     .phone-wrapper
-        width: 40%
+        width: 38%
         padding-top: 1rem
-
+        img
+            margin: 0 auto
 .budgets-wrapper
     width: 100%
     display: flex
@@ -44,52 +43,40 @@
         .align-left
             width: 70%
             margin-right: auto
-
         .align-right
             width: 70%
             margin-left: auto
-            img
-                width: 100%
     .budgets
         p
             color: $accent-color
         span
             color: $heading-color
 
-@media (min-width: 500px)
-    .brand-info-page
-        padding-top: 0
+@media (min-width: 410px)
     .page-intro
         .page-num
             flex: 0 0 20%
-            font-size: 6rem
-
     .content-wrapper
         flex-direction: row
         justify-content: space-between
         gap: 0.5rem
         .phone-wrapper
-            flex: 0 0 40%
+            flex: 0 0 45%
             padding-top: 1rem
 
     .budgets-wrapper
         gap: 1rem
-        flex: 0 0 50%
+        flex: 0 0 60%
         .budgets
             padding-top: 0
 
 @media (min-width: 1250px)
     .content-wrapper
         .phone-wrapper
-            flex: 0 0 30%
-            width: 100%
             padding-top: 1rem
     .page-intro
         h3
             font-size: 3rem
-        .page-num
-            font-size: 7rem
-
     .brand-info-page
         padding: 1rem
 

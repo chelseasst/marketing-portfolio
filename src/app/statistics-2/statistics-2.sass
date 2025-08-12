@@ -1,11 +1,10 @@
 @use '../../styles/_variables' as *
 .statistics-2-page
     height: 100%
-    position: relative
     display: flex
     flex-direction: column
-    justify-content: center
     align-items: center
+    padding-top: 1rem
 
 h4
     margin-bottom: 0.5rem
@@ -43,14 +42,14 @@ h4
             width: 60%
 
 @media (min-width: 750px)
-    .statistics-2-page
-        justify-content: space-around
     .wrapper
         flex-direction: row
         .iphone-wrapper
             width: 40%
         .ipad-wrapper
             width: 60%
+    h4
+        margin-bottom: 5rem
 
 @media (min-width: 1024px)
     .wrapper

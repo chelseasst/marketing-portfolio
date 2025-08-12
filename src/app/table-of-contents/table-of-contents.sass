@@ -1,11 +1,12 @@
-.table-of-contents
+.table-of-contents-page
     height: 100%
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
+    padding-top: 1.5rem
 
-.h2-wrapper
+.page-intro
     position: relative
     display: inline-block
     width: 100%
@@ -42,22 +43,22 @@
         width: 3rem
 
 @media (min-width: 768px)
-    .table-of-contents
+    .table-of-contents-page
         gap: 2rem
     .list
         flex-wrap: nowrap
         gap: 0rem
         li
             flex: 1 1 100%
-    .h2-wrapper
+    .page-intro
         .circle-img
             width: 60%
 
 @media (min-width: 1440px)
-    .table-of-contents
+    .table-of-contents-page
         gap: 4rem
     .list
         gap: 1rem
-    .h2-wrapper
+    .page-intro
         .circle-img
             width: 75%
