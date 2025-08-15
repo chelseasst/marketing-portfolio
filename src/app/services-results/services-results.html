@@ -5,7 +5,7 @@
     </div>
     }
     <div class="results-wrapper">
-        <h3>{{data.heading}}</h3>
+        <h3 class="slide-left" appAnimateOnScroll>{{data.heading}}</h3>
         <ul class="services heading">
             @for (service of data.services; track service) {
             <li class="slide-left">{{ service }}</li>

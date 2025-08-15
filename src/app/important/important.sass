@@ -1,6 +1,6 @@
 @use '../../styles/_variables' as *
 
-.imporant-page
+.important-page
     height: 100%
     padding-top: 1rem
 
@@ -12,18 +12,14 @@
     text-align: center
     margin-bottom: 1rem
     h3
-        position: relative
         color: $accent-color
-        font-size: 2.3rem
-        border-bottom: 5px solid $heading-color
-        text-transform: uppercase
-        margin-bottom: 1rem
-        margin-top: 1rem
+        display: flex
+        align-items: center
         .bulb
-            position: absolute
-            top: 0.5rem
-            right: -2.5rem
-            width: 2.5rem
+            width: 2rem
+            height: auto
+            vertical-align: middle
+
     .text
         font-size: 0.8rem
         max-width: 350px
@@ -34,72 +30,46 @@
     justify-content: center
     align-items: center
     .heading
-        font-size: 1.5rem
         color: $accent-color
         text-transform: uppercase
     ul
         list-style-type: disc
         text-transform: uppercase
-        font-size: 0.8rem
         text-align: center
         width: 80%
+        li
+            font-size: 0.8rem
 
 @media (min-width: 425px)
     .page-intro
-        margin-bottom: 2rem
+        margin-bottom: 1rem
         .text
-            font-size: 0.9rem
+            font-size: 1rem
     .highlights-container
         ul
-            font-size: 0.9rem
-
-@media (min-width: 600px)
-    .page-intro
-        margin-bottom: 4rem
+            li
+                font-size: 0.9rem
 
 @media (min-width: 768px)
     .page-intro
         flex-direction: row
         justify-content: space-between
-        padding-top: 2.5rem
-        h3
-            font-size: 2.7rem
-            .bulb
-                top: 1rem
-                width: 3rem
-                right: -3.5rem
     .highlights-container
         ul
             li
                 padding-bottom: 2.5rem
-        .heading
-            font-size: 2rem
 
 @media (min-width: 1024px)
     .page-intro
-        h3
-            font-size: 3.2rem
         .text
-            font-size: 1rem
-            max-width: 550px
-    .highlights-container
-        ul
-            font-size: 1rem
+            max-width: 600px
 
 @media (min-width: 1440px)
     .page-intro
-        margin-bottom: 5rem
+        margin-bottom: 2rem
         h3
-            font-size: 5rem
+            font-size: 3em
             .bulb
-                top: 2rem
-                width: 5rem
-                right: -6rem
+                width: 3em
         .text
-            font-size: 1.5rem
             max-width: 750px
-    .highlights-container
-        ul
-            font-size: 1.5rem
-        .heading
-            font-size: 3rem

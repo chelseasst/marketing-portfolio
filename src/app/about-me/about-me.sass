@@ -11,6 +11,7 @@ h3
 .about-me-div
     display: flex
     flex-direction: column
+    align-items: flex-start
     margin-bottom: 1rem
     .image-wrapper
         display: flex
@@ -18,8 +19,8 @@ h3
         align-items: center
         flex: 1 0 25%
         .profile-img-div
-            width: 150px
-            height: 150px
+            width: 100px
+            height: 100px
             border-radius: 50%
             overflow: hidden
             &:hover
@@ -31,18 +32,19 @@ h3
             height: 100%
             object-fit: cover
             display: block
-
-.text-div
-    border-bottom: 2px solid $heading-color
-    text-align: center
-    p
-        font-size: 0.8rem
-    .birth-date
-        text-align: end
-        span
-            background-color: $accent-color
-            padding: 0.3rem
-            border-radius: 0.5rem
+    .text-div
+        border-bottom: 2px solid $heading-color
+        text-align: center
+        position: relative
+        .birth-date
+            position: absolute
+            top: -1.7rem
+            right: 0
+            text-align: end
+            span
+                background-color: $accent-color
+                padding: 0.3rem
+                border-radius: 0.5rem
 
 .columns-wrapper
     text-align: center
@@ -60,6 +62,7 @@ h3
     img
         width: 70px
         &:hover
+            cursor: pointer
             transform: scale(1.2)
     .icons-wrapper, .socials-label
         display: none
@@ -71,10 +74,11 @@ h3
 @media (min-width: 375px)
     .about-me-div
         margin-bottom: 2rem
-    .text-div
-        padding-bottom: 1rem
+        .text-div
+            padding-bottom: 1rem
+    .columns-wrapper
         p
-            font-size: 0.9rem
+            font-size: 1em
 
 @media (min-width: 768px)
     .about-me-div
@@ -85,12 +89,12 @@ h3
             .profile-img-div
                 width: 200px
                 height: 200px
-    .text-div
-        padding-bottom: 2rem
-        margin-bottom: 3rem
-        .birth-date
-            text-align: end
-            margin-bottom: 1rem
+        .text-div
+            padding-bottom: 2rem
+            margin-bottom: 2rem
+            .birth-date
+                text-align: end
+                margin-bottom: 1rem
     .column
         flex: 0 0 33%
         img
@@ -108,12 +112,17 @@ h3
                     margin: 0 auto
         .socials-wrapper
             flex-direction: column
-            justify-content: center
+
+@media (min-width: 1024px)
+    .about-me-div
+        margin-bottom: 0
+        margin-top: 1rem
 
 @media (min-width: 1440px)
-    .text-div
-        p
-            font-size: 1.3rem
+    .about-me-div
+        .text-div
+            .birth-date
+                top: -3rem
     .column
         img
             width: 100px

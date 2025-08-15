@@ -10,11 +10,9 @@
     .page-num
         flex: 0 0 15%
         text-align: center
-        font-size: 3rem
     h3
         flex: 0 1 100%
         font-family: serif
-        font-size: 1.2rem
         font-weight: 200
         color: black
         text-transform: uppercase
@@ -31,6 +29,13 @@
         align-items: center
         gap: 0.5rem
         text-align: center
+        .step-content
+            background-color: white
+            border: 2px solid rgb(217, 213, 213)
+            border-radius: 10px
+            padding: 0.2rem
+            p
+                font-size: 0.7rem
         &::before
             content: ''
             position: absolute
@@ -47,14 +52,9 @@
             border-radius: 50%
             background-color: $accent-color
             font-size: 1.3rem
+            font-family: $font-family-headings
             &:hover
                 scale: 1.2
-        .step-content
-            font-size: 0.7rem
-            background-color: white
-            border: 2px solid rgb(217, 213, 213)
-            border-radius: 10px
-            padding: 0.2rem
         .step-title
             font-family: $font-family-headings
             background-color: $accent-color
@@ -74,6 +74,7 @@
             width: 150px
             background-color: $accent-color
             border-radius: 15px
+            font-size: 0.9rem
     .nums-ul
         position: relative
         display: flex
@@ -97,12 +98,14 @@
             color: $accent-color
             text-align: center
             font-size: 1.5rem
+            font-family: $font-family-headings
     .explanations-ul
         display: flex
         justify-content: space-around
         text-align: center
         li
             width: 200px
+            font-size: 0.9rem
 
 @media (min-width: 425px)
     .page-intro
@@ -115,18 +118,9 @@
 
 @media (min-width: 768px)
     .page-intro
-        margin-bottom: 2rem
-        .page-num
-            font-size: 6rem
-        h3
-            font-size: 1.8rem
+        margin-bottom: 1rem
 
 @media (min-width: 1440px)
-    .page-intro
-        .page-num
-            font-size: 7rem
-        h3
-            font-size: 3rem
     .steps-desktop-page
         .titles-ul
             margin-bottom: 1rem
@@ -138,7 +132,7 @@
             li
                 height: 70px
                 width: 70px
-                font-size: 2.3rem
+                font-size: 2rem
         .explanations-ul
             li
                 width: 330px

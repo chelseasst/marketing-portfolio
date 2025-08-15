@@ -7,6 +7,7 @@
     flex-direction: colum
     justify-content: flex-start
     align-items: center
+    overflow-x: hidden
 
 .role-div
     display: flex
@@ -44,14 +45,16 @@ h1
     a
         display: block
     p
-        font-size: 1.5em
         background-color: $accent-color
         border-radius: 10px
         padding-left: 0.5em
 
 @media (min-width: 768px)
     .role-div
-        font-size: 1.5rem
+        span
+            font-size: 1.5rem
+        .small
+            font-size: 1rem
     .stars
         width: 130px
         top: -130px
@@ -61,10 +64,10 @@ h1
 
 @media (min-width: 1440px)
     .role-div
-        font-size: 3rem
+        span
+            font-size: 2rem
         .small
-            font-size: 1.5rem
+            font-size: 1.2rem
     .splash
         width: 230px
         right: -200px
-        bottom: 50px

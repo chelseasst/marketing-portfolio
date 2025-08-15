@@ -9,10 +9,10 @@
 .page-intro
     display: flex
     align-items: flex-start
+    margin-bottom: 1rem
     h3
         flex: 0 1 100%
         font-family: serif
-        font-size: 1.3rem
         font-weight: 200
         color: black
         text-transform: uppercase
@@ -44,12 +44,10 @@
     div
         flex: 0 0 40%
 
-@media (min-width: 425px)
-    .high-society-page
-        padding-top: 1rem
+@media (min-width: 420px)
     .phone-container
         div
-            flex: 0 0 30%
+            flex: 0 0 25%
 
 @media (min-width: 525px)
     .statistics-container
@@ -57,15 +55,16 @@
             width: 30%
         .row:last-child
             width: 80%
-
-@media (min-width: 525px)
     .phone-container
         div
             flex: 0 0 20%
 
-@media (min-width: 720px)
-    .high-society-page
-        justify-content: space-around
+@media (min-width: 680px)
+    .statistics-container
+        .row:last-child
+            width: 70%
+
+@media (min-width: 710px)
     .content-wrapper
         display: flex
         .right-side
@@ -80,9 +79,6 @@
             width: 50%
         .row:last-child
             width: 100%
-    .page-intro
-        h3
-            font-size: 1.8rem
 
 @media (min-width: 930px)
     .content-wrapper
@@ -96,10 +92,14 @@
             width: 80%
 
 @media (min-width: 1250px)
-    .high-society-page
-        padding: 1rem
-    .page-intro
-        h3
-            font-size: 3rem
     .statistics-container
         gap: 1rem
+
+@media (min-width: 1440px)
+    .statistics-container
+        .row
+            width: 40%
+        .row:nth-child(2)
+            width: 30%
+        .row:last-child
+            width: 90%

@@ -26,114 +26,84 @@ h4
 .categories
     display: flex
     flex-direction: column
-
-.category
-    display: flex
-    flex-direction: column
-
-.title
-    font-family: $font-family-headings
-    color: $accent-color
-
-.text
-    font-size: 0.7rem
-
-.graphic
-    display: flex
-    justify-content: flex-end
-    align-items: center
-    gap: 0.5rem
-    flex: 0 0 30%
-    .yellow
-        height: 10px
-        width: 90px
-        background-color: $accent-color
-        border-radius: 0.5rem
-        border: 1px solid $heading-color
-    .green
-        height: 9px
-        background-color: $heading-color
-        border-radius: 0.5rem
-    .ef
-        width: 73px
-    .nf
-        width: 82px
-
-.right-oriented
-    float: right
-.align-left
-    justify-content: flex-start
+    .category
+        display: flex
+        flex-direction: column
+        .title
+            font-family: $font-family-headings
+            color: $accent-color
+        .text
+            font-size: 0.7rem
+        .graphic
+            display: flex
+            justify-content: flex-end
+            align-items: center
+            gap: 0.5rem
+            flex: 0 0 30%
+            .yellow
+                height: 10px
+                width: 90px
+                background-color: $accent-color
+                border-radius: 0.5rem
+                border: 1px solid $heading-color
+            .green
+                height: 9px
+                background-color: $heading-color
+                border-radius: 0.5rem
+            .ef
+                width: 73px
+            .nf
+                width: 82px
+            .right-oriented
+                float: right
+            .align-left
+                justify-content: flex-start
 
 @media (min-width: 768px)
-    .my-work-page
-        padding: 0
     h4
         margin: 0.5rem 0
         padding-left: 0rem
-
     .page-intro
-        .page-num
-            flex: 0 0 20%
+        margin-bottom: 1rem
         .text
             font-size: 0.9rem
-            margin-top: 2rem
-
-    .category
-        flex-direction: row
-
-    .graphic
-        justify-content: center
-
-    .text
-        font-size: 0.9rem
+        .page-num
+            flex: 0 0 20%
+    .categories
+        .category
+            flex-direction: row
+            .title
+                font-size: 1rem
+            .text
+                font-size: 0.9rem
+            .graphic
+                justify-content: center
 
 @media (min-width: 1024px)
     h4
         margin: 0
-        margin-top: 1rem
-
     .page-intro
         .text
             border-top: 0.5rem solid $heading-color
 
-    .categories
-        gap: 0
-
-    .text
-        font-size: 1.1rem
-
 @media (min-width: 1440px)
     .my-work-page
         padding: 1rem
-
     h4
-        margin-top: 1rem
         padding-left: 0
-
-    .page-intro
-        .text
-            margin-top: 3rem
-            font-size: 1.5rem
-
     .categories
-        gap: 0
-
-    .title
-        font-size: 2.3rem
-    .text
-        font-size: 1.4rem
-
-    .graphic
-        flex: 0 0 30%
-        .yellow
-            height: 10px
-            width: 120px
-            border-radius: 0.5rem
-            border: 1px solid $heading-color
-        .green
-            height: 9px
-            border-radius: 0.5rem
-        .ef
-            width: 97px
-        .nf
-            width: 109px
+        .category
+            .graphic
+                flex: 0 0 30%
+                .yellow
+                    height: 10px
+                    width: 120px
+                    border-radius: 0.5rem
+                    border: 1px solid $heading-color
+                .green
+                    height: 9px
+                    border-radius: 0.5rem
+                .ef
+                    width: 97px
+                .nf
+                    width: 109px
